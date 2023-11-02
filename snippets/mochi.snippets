@@ -1,0 +1,55 @@
+snippet fn
+	fn ${1:name}(${2:params}) {
+		${0:$VISUAL}
+	}
+snippet fnr
+	fn ${1:name}(${2:params}) -> [${3:return}] {
+		${0:$VISUAL}
+	}
+snippet infn
+	inline fn ${1:name}(${2:params}) {
+		${0:$VISUAL}
+	}
+snippet infnr
+	inline fn ${1:name}(${2:params}) -> [${3:return}] {
+		${0:$VISUAL}
+	}
+snippet estruct
+	struct ${1:Name}:
+snippet struct
+	struct ${1:Name} {
+		${0:$VISUAL}
+	}
+snippet impl
+	impl ${1:Struct}<${2:Of}> {
+		${0:$VISUAL}
+	}
+snippet implr
+	impl ${1:Struct}<${2:Of}>
+	requires: [${3:requirement}] {
+		${0:$VISUAL}
+	}
+snippet if
+	${1:cond} if {
+		${0:$VISUAL}
+	}
+snippet ife
+	${1:cond} if {
+		${2:then}
+	} else {
+		${3:else}
+	}
+snippet while
+	while ${1:cond} do {
+		${0:$VISUAL}
+	}
+snippet inc
+	include "${0:$VISUAL}"
+snippet var
+	var ${2:type}: ${1:name}
+snippet syscall
+	${2:args} SYS_${1:NAME} syscall(${3:nargs})
+snippet hello
+	fn main() {
+		"Hello, World!" println
+	}
