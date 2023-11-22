@@ -11,7 +11,6 @@ set tabstop=4
 set shiftwidth=4
 
 syn keyword mocKeyword include struct enum pub fn while do break continue as cast else if match inline interface impl union var mut requires return
-syn match mocKeyword "\v<(deref|set|cast)[ibcp]>"
 
 syn keyword mocBool true false
 syn keyword mocType u64 u8 char bool
